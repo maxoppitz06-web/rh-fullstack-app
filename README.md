@@ -1,16 +1,64 @@
-# React + Vite
+# RH Fullstack App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación full stack de gestión de empleados desarrollada con React, Django REST Framework y MySQL.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Frontend
+- React
+- Vite
+- Axios
+- Bootstrap
 
-## React Compiler
+### Backend
+- Python
+- Django
+- Django REST Framework
+- PyMySQL
+- django-cors-headers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Base de datos
+- MySQL
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Listar empleados
+- Crear empleados
+- Editar empleados
+- Eliminar empleados
+- Buscar empleados por nombre o departamento
+- Conexión frontend-backend mediante API REST
+
+## Estructura del proyecto
+
+```text
+rh-fullstack-app/
+├── backend/
+└── frontend/
+```
+
+## API principal
+
+```text
+http://localhost:8080/api/empleados
+```
+
+## Ejecución del backend
+
+```bash
+cd backend
+source .venv/bin/activate
+python manage.py runserver 8080
+```
+
+## Ejecución del frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Autor
+
+Max Oppitz
